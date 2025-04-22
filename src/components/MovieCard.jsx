@@ -5,7 +5,7 @@ function MovieCard({ movie: { title, poster_path, release_date, original_languag
   return (
     <div className="movie-card">
 
-      <img src={imageUrl} alt={title} />
+      <img src={poster_path?imageUrl:'./no-movie.png'} alt={title} />
       <div className="mt-4">
         <h3>{title}</h3>
         <div className="content">
