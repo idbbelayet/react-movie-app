@@ -74,7 +74,7 @@ console.log(data.results);
             ):errorMessage?(<p className="text-red-500">{errorMessage}</p>):(
              <ul>
                 {movieList.map((movie) => (
-                  <MovieCard
+                  <MovieCard 
                     key={movie.id}
                     movie={movie}/>
                    
